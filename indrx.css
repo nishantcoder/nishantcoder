@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(219, 248, 248);
+    background-color:rgb(0, 0, 0);
     
 }
 header{
@@ -7,7 +7,7 @@ header{
     width: 1920px;
     margin-top: -10px;
     margin-left: -10px;
-    background-color:papayawhip;
+    background-color:rgb(228, 203, 134);
 }
 
 
@@ -49,7 +49,7 @@ footer
 {
     height: 50px;
     width: 1920px;
-   
+   padding-top: 50px;
      
     
 }
@@ -58,7 +58,7 @@ footer
 {
     height: 400px;
     width: 250px;
-    opacity: 0%;
+    opacity: 10%;
     margin-left: 15px;
     margin-top: 100px;
     border-radius: 10px;
@@ -82,9 +82,9 @@ footer
 #current{
     height: 400px;
     width: 250px;
-    opacity: 0;
+    opacity: 10%;
     margin-left: 350px;
-    margin-top: -300px;
+    margin-top: -435px;
     border-radius: 10px;
     border:2px solid #e8142c;
     padding: 15px;
@@ -163,4 +163,53 @@ footer
 .mail:hover::after {
     transition: all 0.4s;
     content: " >>";
+}
+
+#myself,#present{
+    color:#00d2da;
+    opacity: 100%;
+    font-size: 25px;
+    text-decoration: underline;
+    
+}
+
+
+.frame{
+    opacity: 10%;
+    margin-top: -420px;
+    margin-left: 680px;
+    border:#e8142c solid 2px;
+    border-radius: 20px;
+    width: 310px;
+}
+
+.frame:hover{
+    transition: all 0.7s;
+    opacity: 100%;
+    margin-top: -500px;
+
+}
+#picname{
+    opacity: 80%;
+    color:rgb(0, 242, 255);
+    font-size: 25px;
+    margin-top: 200px;
+    margin-left: 70px;
+    text-decoration: underline;
+    
+    
+}
+
+.pic{
+    opacity: 0%;
+    margin-top: -250px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.pic:hover{
+    opacity: 100%;
+}
+
+.nis{
+    border-radius: 15px;
 }
