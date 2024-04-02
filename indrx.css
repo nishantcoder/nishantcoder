@@ -482,10 +482,18 @@ footer{
         margin-top: -5px;
     }
     #current{
-        margin-top:100px;
+        margin-top:40px;
         margin-left:20px;
     }
     #current:hover{
         margin-top:-50px;
+    }
+    .frame{
+        margin-top:-500px;
+        margin-left:600px;
+    }
+    .frame:hover{
+        margin-top:-530px;
+        opacity: 100%;
     }
 }
