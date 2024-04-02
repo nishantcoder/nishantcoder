@@ -1,6 +1,6 @@
 body {
-    background: rgb(255, 92, 171);
-    background: linear-gradient(0deg, rgb(255, 73, 152) 0%, rgb(125, 44, 255) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(247, 173, 205) 0%, rgb(200, 173, 243) 100%);
 
 }
 
@@ -59,12 +59,7 @@ header {
     color: #ffffff;
 }
 
-footer {
-    height: 50px;
-    padding-top: 50px;
 
-
-}
 
 #about {
     height: 400px;
@@ -115,13 +110,7 @@ footer {
 
 }
 
-.foot {
-    height: 100px;
-    border: 2px solid #e8d4ed18;
-    border-radius: 5px;
-    background: #cb6de420;
-    position: absolute;
-}
+
 
 .mail {
     position: absolute;
@@ -278,21 +267,27 @@ footer {
 .skillset {
     position: relative;
     align-items: center;
-    margin-left: 100px;
+    margin-left:-15px;
     margin-top: 100px;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    
     font-weight: bold;
+    height: 230px;
+    background:#03445c;
 
 }
 
 #label {
-    text-align: center;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 
-
+#c{
+    margin-top: 15px;
+    margin-left: 25px;
+}
 #cpp {
     margin-top: -55px;
     margin-left: 100px;
@@ -314,8 +309,8 @@ footer {
 }
 
 #js {
-    margin-top: 15px;
-    margin-left: 0px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 #adobe {
@@ -343,53 +338,154 @@ footer {
     box-shadow: 0px 8px 15px rgb(0, 242, 255);
 }
 
-.social {
-    margin-left: 200px;
-    margin-top: 150px;
+
+
+
+
+
+
+
+
+
+.intern{
+    margin-top: -20px;
+    margin-left:-15px;
+    background-color: #03445c;
+    height: 150px;
 
 }
-
-
-
-#git {
+#inhead{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#cisco{
     margin-left: 100px;
-    margin-top: -53px;
-
+    margin-top:20px;
 }
-
-#x {
-    margin-left: 200px;
-    margin-top: -53px;
-
-}
-
-#linkdin {
+#internshala{
+    margin-top: -55px;
     margin-left: 300px;
-    margin-top: -53px;
-
+}
+#tech{
+    margin-top: -55px;
+    margin-left: 500px;
+}
+#aicte{
+    margin-top: -65px;
+    margin-left: 700px;
+    margin-right: 100px;
+}
+#sf{
+    margin-top: -70px;
+    margin-left: 820px;
+    margin-right: 100px;
+}
+#spoken{
+    margin-top: -70px;
+    margin-left: 950px;
+}
+.internlogo:hover{
+    transition: all 0.5s;
+    transform: scale(1.65);
 }
 
-.sicons {
-    border-radius: 40px;
-
+footer{
+    height:500px;
+    background: #062531;
+    margin-left: -15px;
 }
+
+
+
+
+.sicons{
+    color:white;
+    font-size: 30px;
+    border-radius: 50px;
+    background: #00d3da00;
+    
+}
+
 
 .sicons:hover {
     transition: all 0.4s;
-    transform: scale(1.3);
-    box-shadow: 0px 8px 15px rgba(255, 0, 208, 0.679);
+    color:#01ffea;
+    box-shadow: 0px 5px 50px rgb(6, 255, 251);
 }
 
 .sicons:active {
     transition: all 0.3s;
     transform: scale(0.5);
 }
-
-#sname{
-    color:#ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: underline;
+#git{
+    margin-top:  -35px;
     margin-left:100px;
-    padding-bottom: 10px;
+    
+}
+#x{
+    margin-top:-35px;
+    margin-left:150px;
+}
+#linkdin{
+    margin-top:-35px;
+    margin-left:200px;
+}
+#instagram{
+    padding-top: 420px;
+    margin-left:250px;
+}
+#mail{
+    margin-top:-35px;
+    margin-left:300px;
+}
+.contact{
+    margin-bottom: -200px;
+    margin-top: -50px;
+}
+#address{
+    position:inherit;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-bottom: -100px;
+    color:white;
+    padding-top: 50px;
+}
+
+
+@media screen and (max-width:1040px)
+{
+    footer,.intern,.skillset{
+        width: 1100px;
+       
+    }
+    footer{
+        max-width: 1100px;
+    }
+    body{
+        max-height: 1200px;
+        max-width: 400px;
+
+    }
+    #about,#current{
+        width: 500px;
+        height: 200px;
+        color:white;
+    }
+    #myself{
+        margin-top: -5px;
+    }
+    #current{
+        margin-top:100px;
+        margin-left:20px;
+    }
+    #current:hover{
+        margin-top:-50px;
+    }
 }
