@@ -37,7 +37,7 @@ header {
     text-align: center;
     margin-top: 10px;
     margin-left: 10px;
-    border: solid rgb(255, 255, 255);
+    
 }
 
 #title {
@@ -124,60 +124,6 @@ header {
 }
 
 
-
-.mail {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 50px;
-    height: 40px;
-    width: 100px;
-    border-top: 10px solid #EA4335;
-    border-bottom: 10px solid #EA4335;
-    border-left: none;
-    border-right: none;
-    text-overflow: ellipsis;
-    font-size: 15px bold;
-    font-style: italic;
-    background-color: rgb(56, 3, 3);
-    color: #fbbc05;
-    border-radius: 15%;
-}
-
-.mail:hover {
-    transition: all 0.3s;
-    width: 150px;
-    height: 60px;
-    background-color: white;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-left: 7px solid #ea35ab;
-    border-right: 7px solid #6748d7;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 15%;
-    margin-left: 5px;
-    color: #ea35ab;
-}
-
-.mail:active {
-    transition: all 0.3s;
-    background-color: white;
-    width: 130px;
-    margin-left: 10px;
-    font-size: 18px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-left: 7px solid #6748d7;
-    border-right: 7px solid #ea35aba4;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 20%;
-    color: #6748d7;
-}
-
-.mail:hover::after {
-    transition: all 0.4s;
-    content: " >>";
-}
 
 #myself,
 #present {
@@ -471,6 +417,76 @@ footer{
     padding-top: 50px;
 }
 
+.container{
+    padding:2rem;
+    margin-left: 200px;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 8 auto;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.75);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider img{
+    flex:1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: slideshow 30s ease infinite;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left:45%;
+    z-index:1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fb5e9f;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    
+}
+
+@keyframes slideshow {
+    0%{transform: translate(0%);}
+    10%{transform: translate(-100%);}
+    20%{transform: translate(-200%);}
+    30%{transform: translate(-300%);}
+    40%{transform: translate(-400%);}
+    50%{transform: translate(-500%);}
+    60%{transform: translate(-600%);}
+    70%{transform: translate(-700%);}
+    80%{transform: translate(-800%);}
+    90%{transform: translate(1000%);}
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+    width: 0.75rem;
+    border-radius: 40%;
+}
+
+.slider:hover{
+    transition: all 0.75s;
+    transform: scale(1.06);
+}
 
 @media screen and (max-width:1040px)
 {
@@ -487,13 +503,14 @@ footer{
 
     }
     #about,#current{
-        width: 500px;
-        height: 200px;
+        width: 600px;
+        height: 400px;
         color:white;
         
     }
-    #myself{
+    #myself,#present{
         margin-top: -5px;
+        color:rgb(0, 217, 255);
     }
     #current{
         margin-top:40px;
@@ -528,6 +545,34 @@ footer{
     }
     #address{
         font-size:40px;
+    }
+    .container{
+        margin-left: 20px;
+        left:50%;
+        height: 600px;
+        width: 900px;
+    }
+    #myself{
+        font-size: 30px;
+    
+    }
+    body {
+        background: linear-gradient(0.5deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 600% 600%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position:0% 50%;
+        }
     }
     
 }
