@@ -310,7 +310,7 @@ header {
     margin-top: -20px;
     margin-left:-15px;
     background-color: #03445c;
-    height: 150px;
+    height: 250px;
 
 }
 #inhead{
@@ -347,6 +347,30 @@ header {
     margin-top: -70px;
     margin-left: 950px;
 }
+#tcs{
+    margin-top: -70px;
+    margin-left: 1050px;
+}
+#nsdc{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#skill{
+    margin-top: -65px;
+    margin-left:200px;
+}
+#bpmce{
+    margin-top: -65px;
+    margin-left:300px;
+}
+#beu{
+    margin-top: -65px;
+    margin-left:400px;
+}
+#dst{
+    margin-top: -65px;
+    margin-left:500px;
+}
 .internlogo:hover{
     transition: all 0.5s;
     transform: scale(1.65);
@@ -365,7 +389,7 @@ footer{
     color:white;
     font-size: 30px;
     border-radius: 50px;
-    background: #00d3da00;
+    background: rgba(0,0,0,0);
     
 }
 
@@ -373,6 +397,7 @@ footer{
 .sicons:hover {
     transition: all 0.4s;
     color:#01ffea;
+    background-color: #062531;
     box-shadow: 0px 5px 50px rgb(6, 255, 251);
 }
 
@@ -401,9 +426,17 @@ footer{
     margin-top:-35px;
     margin-left:300px;
 }
+#phone{
+    margin-top:-33px;
+    margin-left:350px;
+}
 .contact{
     margin-bottom: -200px;
     margin-top: -50px;
+}
+.contactsec{
+    margin-top: -350px;
+    margin-left: 5px;
 }
 #address{
     position:inherit;
@@ -488,6 +521,73 @@ footer{
     transform: scale(1.06);
 }
 
+
+#username,#email,#query{
+    font-size: 25px;
+    color:white;
+    font-weight: bold;
+    
+    margin-right: 12px;
+}
+#namefield,#emailfield,#queryfield{
+    background-color: rgba(193, 255, 255, 0.919);
+    border-radius: 10px;
+    border:2px white;
+    width:300px;
+    height: 30px;
+    box-shadow: 0px 5px 15px rgb(241, 198, 198);
+    margin-bottom: 12px;
+}
+#queryfield{
+    background-color: rgba(193, 255, 255, 0.919);
+    border-radius: 10px;
+    width:300px;
+    height: 50px;
+
+}
+#submitbtn{
+    background-color: #002861;
+    border-radius: 12px;
+    font-size: 18px;
+    color:white;
+    border:0.75px solid white;
+    width:100px;
+    height: 40px;
+    box-shadow: 0px 5px 15px rgb(241, 198, 198);
+    margin-top: 20px;
+    margin-left:175px;
+}
+#submitbtn:hover{
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0px 15px 25px rgb(176, 26, 118);
+    border: 1px solid white;
+}
+.form{
+    padding-left: 60%;
+    margin-top: -230px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#formlabel{
+    font-size:30px;
+    color:white;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-bottom: 30px;
+
+}
+#email{
+    margin-left: 7px;
+}
+#ends{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 40%;
+    margin-top: 50px;
+
+
+}
 @media screen and (max-width:1040px)
 {
     footer,.intern,.skillset{
@@ -540,8 +640,28 @@ footer{
     #spoken{
         margin-left: 250px;
     }
+    #tcs{
+        margin-left:330px;
+    }
+    #nsdc{
+        margin-left:450px;
+        margin-top: -65px;
+    }
+    #skill{
+        margin-left:550px;
+    }
+    #bpmce{
+        margin-left:650px;
+    }
+    #beu{
+        margin-left:750px;
+    }
+    #dst{
+        margin-left:850px;
+    }
     footer{
         padding-top: 50px;
+        height: 800px;
     }
     #address{
         font-size:40px;
@@ -573,6 +693,14 @@ footer{
         100% {
             background-position:0% 50%;
         }
+    }
+    .form{
+        margin-top: 80px;
+        margin-left: -550px;
+        font-size: 30px;
+    }
+    #ends{
+        margin-left: 15%;
     }
     
 }
