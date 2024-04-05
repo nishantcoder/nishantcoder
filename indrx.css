@@ -477,7 +477,7 @@ footer{
     scroll-snap-align: start;
     object-fit: cover;
     border-radius: 10px;
-    animation: slideshow 30s ease infinite;
+    animation: slideshow 50s ease infinite;
 }
 .slider-nav{
     display: flex;
